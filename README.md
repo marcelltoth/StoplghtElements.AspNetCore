@@ -1,2 +1,2 @@
-# StoplghtElements.AspNetCore
+# StoplightElements.AspNetCore
 Stoplight Elements documentation middleware for ASP.NET Core 3.1+
