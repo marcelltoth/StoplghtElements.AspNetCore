@@ -6,9 +6,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{7B5D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C2BB4805-E3D3-4ED9-824A-A74961D6CB1F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoplightElements.AspNetCore", "src\StoplightElements.AspNetCore\StoplightElements.AspNetCore.csproj", "{D46BB5AE-DE45-416F-94BD-B0E2BED68559}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoplightElements.AspNetCore.Example.DesignFirstApi", "samples\StoplightElements.AspNetCore.Example.DesignFirstApi\StoplightElements.AspNetCore.Example.DesignFirstApi.csproj", "{122AF2C5-3769-49A4-BC95-8C81F759C750}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D46BB5AE-DE45-416F-94BD-B0E2BED68559} = {7A2570C0-176A-41C5-B2B0-3C91B9B0479B}
+		{122AF2C5-3769-49A4-BC95-8C81F759C750} = {7B5DF81A-1589-4AB3-88D2-C42E816B85EC}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D46BB5AE-DE45-416F-94BD-B0E2BED68559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D46BB5AE-DE45-416F-94BD-B0E2BED68559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D46BB5AE-DE45-416F-94BD-B0E2BED68559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D46BB5AE-DE45-416F-94BD-B0E2BED68559}.Release|Any CPU.Build.0 = Release|Any CPU
+		{122AF2C5-3769-49A4-BC95-8C81F759C750}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{122AF2C5-3769-49A4-BC95-8C81F759C750}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{122AF2C5-3769-49A4-BC95-8C81F759C750}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{122AF2C5-3769-49A4-BC95-8C81F759C750}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
