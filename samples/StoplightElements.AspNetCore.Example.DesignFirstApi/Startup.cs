@@ -15,10 +15,14 @@ namespace StoplightElements.AspNetCore.Example.DesignFirstApi
 
         public IConfiguration Configuration { get; }
 
+        public const string ApiDescriptionPath = "/openapi.yaml";
+
+        public const string DocumentationBasePath = "/docs";
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddStoplightElements();
+            services.AddStoplightElements(new StoplightElementsOptions(ApiDescriptionPath));
             services.AddControllers();
         }
 
@@ -39,7 +43,8 @@ namespace StoplightElements.AspNetCore.Example.DesignFirstApi
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.MapOpenApiDocument(OpenApiFile.FromEmbeddedResource("openapi.yaml"));
+                endpoints.MapOpenApiDocument(ApiDescriptionPath, OpenApiFile.FromEmbeddedResource("openapi.yaml"));
+                endpoints.MapStoplightElements(DocumentationBasePath);
             });
         }
     }
